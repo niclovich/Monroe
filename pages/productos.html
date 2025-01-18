@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../img/icon-monroe.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Monroe</title>
+</head>
+
+<body>
+    <!-- Banner Principal  -->
+    <header>
+        <div class="custom-nav-prom">
+            <div id="carouselExampleSlidesOnly" class="carousel slide bg-monroe-red" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <span class="fw-bold text-white">3 CUOTAS SIN INTERÉS</span>
+                    </div>
+                    <div class="carousel-item">
+                        <span class="fw-bold text-white">6 CUOTAS SIN INTERÉS EN COMPRAS SUPERIORES A $150.000</span>
+
+
+                    </div>
+                    <div class="carousel-item">
+                        <span class="fw-bold text-white"> ⛟ ENVÍO GRATIS EN COMPRAS SUPERIORES A $150.000
+                        </span>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo a la izquierda -->
+                <a class="navbar-brand" href="#"><img src="../img/icon-monroe.png" alt="icono Monroe" class="logo"></a>
+
+                <!-- Botón para móvil -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces principales centrados -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown-center">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                                <li><a class="dropdown-item" href="#">Destacado Monroe</a></li>
+                                <li><a class="dropdown-item" href="#section-gift-card">Gif Card</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acerca-de.html">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Usuario y carrito a la derecha -->
+                <div class="d-flex align-items-center">
+                    <a class="nav-link" href="pages/user.html"><i class="fas fa-user"></i> User</a>
+                    <a class="nav-link" href="pages/carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Contenido Principal -->
+
+    <main>
+        <div class="custom-container">
+
+
+            <section class="section-products">
+                <div class="custom-container-title bg-monore-grandient ">
+                    <h2 class="custom-title">Productos</h2>
+                    <span class="custom-subtitle">Explora nuestra amplia selección de ropa para cada estilo y ocasión.</span>
+
+                </div>
+                <div class="catalogo-productos">
+                    <!-- Seccion Filter -->
+                    <section class="filter-products">
+                        <h2>Filtros</h2>
+                    
+                        <div class="accordion" id="filterAccordion">
+                            <!-- Tipo de Producto -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingProducto">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProducto" aria-expanded="true" aria-controls="collapseProducto">
+                                        Tipo de Producto
+                                    </button>
+                                </h2>
+                                <div id="collapseProducto" class="accordion-collapse collapse show" aria-labelledby="headingProducto" data-bs-parent="#filterAccordion">
+                                    <div class="accordion-body">
+                                        <label for="camisas"><input type="checkbox" id="camisas" name="producto[]" value="camisas"> Camisas</label>
+                                        <label for="tops"><input type="checkbox" id="tops" name="producto[]" value="tops"> Tops</label>
+                                        <label for="vestidos"><input type="checkbox" id="vestidos" name="producto[]" value="vestidos"> Vestidos</label>
+                                        <label for="carteras"><input type="checkbox" id="carteras" name="producto[]" value="carteras"> Carteras</label>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Talla -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTalla">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTalla" aria-expanded="false" aria-controls="collapseTalla">
+                                        Talla
+                                    </button>
+                                </h2>
+                                <div id="collapseTalla" class="accordion-collapse collapse" aria-labelledby="headingTalla" data-bs-parent="#filterAccordion">
+                                    <div class="accordion-body">
+                                        <label for="unitalla"><input type="checkbox" id="unitalla" name="talla[]" value="unitalla"> Unitalla</label>
+                                        <label for="xs"><input type="checkbox" id="xs" name="talla[]" value="xs"> XS</label>
+                                        <label for="s"><input type="checkbox" id="s" name="talla[]" value="s"> S</label>
+                                        <label for="m"><input type="checkbox" id="m" name="talla[]" value="m"> M</label>
+                                        <label for="l"><input type="checkbox" id="l" name="talla[]" value="l"> L</label>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Color -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingColor">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
+                                        Color
+                                    </button>
+                                </h2>
+                                <div id="collapseColor" class="accordion-collapse collapse" aria-labelledby="headingColor" data-bs-parent="#filterAccordion">
+                                    <div class="accordion-body">
+                                        <label for="multicolor"><input type="checkbox" id="multicolor" name="color[]" value="multicolor"> <span class="color-circle" style="background-color: multicolor;"></span> Multicolor</label>
+                                        <label for="azul"><input type="checkbox" id="azul" name="color[]" value="azul"> <span class="color-circle" style="background-color: blue;"></span> Azul</label>
+                                        <label for="rosa"><input type="checkbox" id="rosa" name="color[]" value="rosa"> <span class="color-circle" style="background-color: pink;"></span> Rosa</label>
+                                        <label for="verde"><input type="checkbox" id="verde" name="color[]" value="verde"> <span class="color-circle" style="background-color: green;"></span> Verde</label>
+                                        <label for="rojo"><input type="checkbox" id="rojo" name="color[]" value="rojo"> <span class="color-circle" style="background-color: red;"></span> Rojo</label>
+                                        <label for="morado"><input type="checkbox" id="morado" name="color[]" value="morado"> <span class="color-circle" style="background-color: purple;"></span> Morado</label>
+                                        <label for="naranja"><input type="checkbox" id="naranja" name="color[]" value="naranja"> <span class="color-circle" style="background-color: orange;"></span> Naranja</label>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Material -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingMaterial">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaterial" aria-expanded="false" aria-controls="collapseMaterial">
+                                        Material
+                                    </button>
+                                </h2>
+                                <div id="collapseMaterial" class="accordion-collapse collapse" aria-labelledby="headingMaterial" data-bs-parent="#filterAccordion">
+                                    <div class="accordion-body">
+                                        <label for="poliester"><input type="checkbox" id="poliester" name="material[]" value="poliester"> Poliéster</label>
+                                        <label for="algodon"><input type="checkbox" id="algodon" name="material[]" value="algodon"> Algodón</label>
+                                        <label for="polipiel"><input type="checkbox" id="polipiel" name="material[]" value="polipiel"> Polipiel</label>
+                                        <label for="pana"><input type="checkbox" id="pana" name="material[]" value="pana"> Pana</label>
+                                        <label for="acrilico"><input type="checkbox" id="acrilico" name="material[]" value="acrilico"> Acrílico</label>
+                                        <label for="saten"><input type="checkbox" id="saten" name="material[]" value="saten"> Satén</label>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Detalles -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingDetalles">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDetalles" aria-expanded="false" aria-controls="collapseDetalles">
+                                        Detalles
+                                    </button>
+                                </h2>
+                                <div id="collapseDetalles" class="accordion-collapse collapse" aria-labelledby="headingDetalles" data-bs-parent="#filterAccordion">
+                                    <div class="accordion-body">
+                                        <label for="dobladillo"><input type="checkbox" id="dobladillo" name="detalle[]" value="dobladillo"> Dobladillo sin costuras</label>
+                                        <label for="bolsillo"><input type="checkbox" id="bolsillo" name="detalle[]" value="bolsillo"> Bolsillo</label>
+                                        <label for="bordado"><input type="checkbox" id="bordado" name="detalle[]" value="bordado"> Bordado</label>
+                                        <label for="cordon"><input type="checkbox" id="cordon" name="detalle[]" value="cordon"> Cordón</label>
+                                        <label for="flecos"><input type="checkbox" id="flecos" name="detalle[]" value="flecos"> Flecos</label>
+                                        <label for="abertura"><input type="checkbox" id="abertura" name="detalle[]" value="abertura"> Abertura</label>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Seccion Productos -->
+                    <section class="table-productos">
+                        <article class=" card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/enterizo-bahamas.webp" alt="Producto enterizo-bahamas">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Enterizo Bahmas</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+
+                        <article class="card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/mini-falda-vespera.webp" alt="Producto remeron-bordado-smooth">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Minifalda Vespera </h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+
+                        <article class="card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/vestido-largo-tatarian.webp" alt="Producto vestido-largo-tatarian">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Vestido Largo Tatarian</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+                        <article class="card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Pantallon Amaral</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+                        <article class="card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Pantallon Amaral</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+                        <article class="card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Pantallon Amaral</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+                        <article class="card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Pantallon Amaral</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+                        <article class="card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Pantallon Amaral</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+                        <article class=" card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/enterizo-bahamas.webp" alt="Producto enterizo-bahamas">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Enterizo Bahmas</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+                        <article class=" card card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/enterizo-bahamas.webp" alt="Producto enterizo-bahamas">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3>Enterizo Bahmas</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+
+
+            </section>
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <div>
+            <h4>NUESTRA EMPRESA</h4>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Colección</a></li>
+                <li><a href="#">Locales</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Franquicias</a></li>
+                <li><a href="#">RRHH</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>LEGALES</h4>
+            <ul>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Políticas de Envío</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Defensa del Consumidor</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#" class="highlight-button">ARREPENTIMIENTO DE COMPRA</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>GIFT CARD</h4>
+            <ul>
+                <li><a href="#">Gift Card</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>SUSCRIBITE AL NEWSLETTER Y TE REGALAMOS UN 10% OFF EN TU PRÓXIMA COMPRA</h4>
+            <form>
+                <input type="email" placeholder="Ingresá tu e-mail" required>
+                <button type="submit">></button>
+            </form>
+        </div>
+        <div>
+            <h4>NUESTRAS REDES</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

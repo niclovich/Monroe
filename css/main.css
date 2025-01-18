@@ -1,0 +1,495 @@
+/* Estilos Generales */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: whitesmoke;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+ul {
+    list-style: none;
+
+}
+
+.bg-monroe-red {
+    background-color: #e61835;
+}
+
+.custom-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.custom-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 30px;
+    /* Altura de la curva */
+    border: 3px solid #e61835;
+    border-color: transparent transparent #e61835 transparent;
+    border-radius: 40%;
+    /* Hace que la curva sea redonda */
+    margin: 0 auto 0;
+    /* Centra y separa del texto */
+    position: relative;
+    transform: translateY(-20px);
+    /* Ajusta la posición para que los "palitos" queden arriba */
+}
+
+.custom-container-title {
+    padding: 50px 20px;
+    /* Espaciado */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    color: white;
+    /* Color del texto */
+    margin: 30px auto;
+    /* Centrado en la página */
+}
+
+.bg-monore-grandient {
+    background: linear-gradient(to right, #f8b195, #e61835);
+    /* Fondo degradado */
+
+}
+
+.custom-subtitle {
+    font-size: 18px;
+    /* Tamaño del subtítulo */
+    font-weight: 300;
+    /* Estilo ligero */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+}
+
+.custom-container {
+    margin: 10px;
+}
+
+
+
+/* Estilos de la cabecera */
+
+nav img {
+    width: 100px;
+}
+
+
+
+
+/* Estilos de footer */
+footer {
+
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+
+}
+
+
+
+
+
+
+/* Estios Main */
+
+main {
+    text-align: center;
+    color: black;
+}
+
+
+
+/* ------------------Estilos HOME -----------------------*/
+
+/* Estilos seccion Banner */
+.banner-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+}
+.banner-principal  img {
+    width: 100%;
+    height: 70;
+    object-fit: cover;
+    object-position: center;
+}
+
+main .img-cuatro,
+main .img-cinco,
+main .img-uno,
+main .img-cinco {
+    display: none;
+}
+
+
+/* Estilos seccion Categorias destacadas */
+
+.categorias-destacadas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+
+.card-categoria {
+    height: 200px;
+}
+
+.card-categoria:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-img {
+
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;/
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-categoria:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+/* Estilos seccion Gif */
+.card-gift-card {
+    width: 100%;
+    height: 400px;
+}
+
+/* ------------------Estilos PRODUCTOS -----------------------*/
+
+/* Estilo Filter*/
+.filter-products {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    
+}
+.filter-products h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.accordion-button {
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 1rem;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    color: #e74c3c;
+    background-color: #f0f8ff;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+}
+.accordion-body {
+    padding: 10px 20px;
+}
+.accordion-body label {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+.accordion-body input[type="checkbox"] {
+    margin-right: 10px;
+}
+.color-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+
+/* Estilos de la tabla de productos */
+
+
+.card-product {
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-product img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.card-product-discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.card-product-details {
+    padding: 20px;
+}
+
+
+.card-product-price {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.price del {
+    color: #999;
+    font-size: 14px;
+}
+
+.card-product-pagos {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* ------------------Estilos CONTACTOS -----------------------*/
+.contact-card {
+    border: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-icon {
+    font-size: 40px;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+
+.contact {
+    background-color: #ffa2a6;
+}
+
+/* Estilos del carrito */
+.fotter-cart {
+    background-color: #ffa2a6;
+
+}
+
+
+
+
+/* Estilos de la barra de navegación  Destkop*/
+
+@media screen and (min-width: 1024px) {
+
+    /* Estilos de la barra de navegación */
+
+    header {
+
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-nav-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Ajustar el orden visual usando la propiedad `order` */
+    .custom-col-2 {
+        order: 1;
+        /* `col-2` va primero */
+    }
+
+    .custom-col-1 {
+        order: 2;
+        /* `col-1` va en segundo lugar */
+    }
+
+    .custom-col-3 {
+        order: 3;
+        /* `col-3` va en tercer lugar */
+    }
+
+    /* Estios Main*/
+    main {
+        margin-top: 130px;
+    }
+
+    /* Estios Footer */
+    footer {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+
+    /* ----------------------------Estios Home------------------------ */
+
+    .banner-principal .img-dos,
+    .banner-principal .img-cuatro,
+    .banner-principal .img-uno {
+        display: block;
+    }
+
+    .banner-principal {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .banner-principal .img-uno {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 2;
+    }
+
+    .img-dos {
+        grid-column: 2 / 3;
+        /* Segunda columna */
+        grid-row: 1 / 2;
+        /* Primera fila */
+    }
+
+    .img-tres {
+        grid-column: 2 / 3;
+        /* Segunda columna */
+        grid-row: 2 / 3;
+        /* Segunda fila */
+    }
+
+    .img-cuatro {
+        grid-column: 3 / 4;
+        /* Tercera columna */
+        grid-row: 1 / span 2;
+        /* Ocupa ambas filas */
+    }
+
+    /* Estilos seccion Categorias destacadas */
+
+    .categorias-destacadas {
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+    }
+
+    .card-categoria {
+        height: 600px;
+    }
+
+    .card-image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-image-container:hover .card-overlay {
+        opacity: 1;
+        /* Mostrar el overlay al pasar el cursor */
+    }
+
+    .card-image {
+        height: auto;
+        object-fit: cover;
+    }
+
+    .gif-card {
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+    }
+
+    /* ----------------------------Estios Pantalla Productos------------------------ */
+    .catalogo-productos {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+    .card-product img {
+        height: auto;
+        width: auto;
+
+    }
+    
+    .table-productos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin-left: 20px;
+
+    }
+
+}
