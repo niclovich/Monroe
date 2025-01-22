@@ -395,6 +395,7 @@ main .img-cinco {
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 10px;
 }
 
 
@@ -427,7 +428,6 @@ main .img-cinco {
     text-align: center;
     padding: 10px;
     justify-content: space-between;
-    /* Asegura el botón al final */
 
 }
 
@@ -567,7 +567,7 @@ main .img-cinco {
         height: auto;
         object-fit: cover;
     }
-
+    /* Estilos seccion Gif CARDS*/
     .gift-cards{
         display: grid;
         margin-bottom: 5%;
@@ -610,6 +610,7 @@ main .img-cinco {
         grid-gap: 10px;
         align-items: center;
         padding: 15px 10px;
+        
 
     }
 
