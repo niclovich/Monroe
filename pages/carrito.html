@@ -64,8 +64,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                                <li><a class="dropdown-item" href="#">Destacado Monroe</a></li>
-                                <li><a class="dropdown-item" href="#section-gift-card">Gif Card</a></li>
+                                <li><a class="dropdown-item" href="../index.html#section-categorias">Destacado Monroe</a></li>
+                                <li><a class="dropdown-item" href="../index.html#section-promociones">Promociones</a></li>
+                                <li><a class="dropdown-item" href="../index.html#section-gift-card">Gift Card</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
@@ -89,87 +90,76 @@
             <h2 class="custom-title">Mi pedido</h2>
             <span class="custom-subtitle">Explora nuestra amplia selección de ropa para cada estilo y ocasión.</span>
         </div>
-        <section class="section-cart ">
-            <section class="body-cart">
-                <article class="card cart-item">
-                    
-                    <img src="../img/enterizo-bahamas.webp" alt="Enterizo Bahamas">
-                    <div class=" cart-item-details">
-                        <p>Enterizo Bahamas</p>
-                        <p>Talla: S | Color: Negro</p>
-                    </div>
-                    <div class="cart-item-controls">
-                        <button class="btn btn-success">+</button>
-                        <input type="number" value="1" min="1" max="99">
-                        <button class="btn btn-warning" >-</button>
-                    </div>
-                    <p class="cart-item-price">$249.999</p>
-                    <span class="cart-item-delete">🗑️</span>
-                </article>
-                <article class="card cart-item">
-                    <img src="../img/remeron-bordado.webp" alt="Remeron Bordado">
+        <section class="section-cart container">
+            <section class="card body-cart">
+                <article class="cart-item">
+          
+                    <img src="../img/remeron-bordado.webp" alt="Remeron Bordado" class="cart-image">
                     <div class="cart-item-details">
-                        <p>Remeron Bordado</p>
-                        <p>Talla: M | Color: Negro</p>
+                        <p class="product-name">Remeron Bordado <strong>Talle </strong> XL</p>
+                        <div class="cart-actions">
+                            <a href="#" class="action-link">Eliminar</a>
+                            <a href="#" class="action-link">Guardar</a>
+                        </div>
                     </div>
                     <div class="cart-item-controls">
-                        <button class="btn btn-success">+</button>
-                        <input type="number" value="1" min="1" max="99">
-                        <button class="btn btn-warning" >-</button>
+                        <button class="btn btn-outline-secondary btn-sm btn-decrement">-</button>
+                        <input type="number" value="1" min="1" class="form-control text-center quantity-input" ">
+                        <button class="btn btn-outline-secondary btn-sm btn-increment">+</button>
+                        
                     </div>
-                    <p class="cart-item-price">$249.999</p>
-                    <span class="cart-item-delete">🗑️</span>
+                    <div class="cart-item-info">
+                        <p class="price">$46.999</p>
+                    </div>
                 </article>
-                <article class="card cart-item">
-                    <img src="../img/remeron-bordado.webp" alt="Remeron Bordado">
+                <article class="cart-item">
+          
+                    <img src="../img/enterizo-bahamas.webp" alt="Enterizo  Bahmas" class="cart-image">
                     <div class="cart-item-details">
-                        <p>Remeron Bordado</p>
-                        <p>Talla: S | Color: Negro</p>
+                        <p class="product-name">Remeron Bordado <strong>Talle </strong> XL</p>
+                        <div class="cart-actions">
+                            <a href="#" class="action-link">Eliminar</a>
+                            <a href="#" class="action-link">Guardar</a>
+                        </div>
                     </div>
                     <div class="cart-item-controls">
-                        <button class="btn btn-success">+</button>
-                        <input type="number" value="1" min="1" max="99">
-                        <button class="btn btn-warning" >-</button>
+                        <button class="btn btn-outline-secondary btn-sm btn-decrement">-</button>
+                        <input type="number" value="1" min="1" class="form-control text-center quantity-input" ">
+                        <button class="btn btn-outline-secondary btn-sm btn-increment">+</button>
+                        
                     </div>
-                    <p class="cart-item-price">$249.999</p>
-                    <span class="cart-item-delete">🗑️</span>
+                    <div class="cart-item-info">
+                        <p class="price">$46.999</p>
+                    </div>
                 </article>
-                <article class="card cart-item">
-                    <img src="../img/remeron-bordado.webp" alt="Remeron Bordado">
-                    <div class="cart-item-details">
-                        <p>Remeron Bordado</p>
-                        <p>Talla: XL | Color: Negro</p>
-                    </div>
-                    <div class="cart-item-controls">
-                        <button class="btn btn-success">+</button>
-                        <input type="number" value="1" min="1" max="99">
-                        <button class="btn btn-warning" >-</button>
-                    </div>
-                    <p class="cart-item-price">$249.999</p>
-                    <span class="cart-item-delete">🗑️</span>
-                </article>
+       
+                
+                
             </section>
             <!-- Pie Carrito  -->
-            <section class=" card footer-cart">
-                <div class="cart-discount">
-                    <h2>Aplicar Cupón de Descuento</h2>
-                    <label for="discount-code">Cupón:</label>
-                    <div class="input-group mb-3">
-                        <input 
-                            type="text" 
-                            id="discount-code" 
-                            class="form-control" 
-                            placeholder="Ingresa tu cupón aquí">
-                        <button 
-                            id="apply-discount" 
-                            class="btn btn-primary">Aplicar</button>
-                    </div>
-                </div>
+            <section class="card footer-cart">
                 <div class="cart-summary">
-                    <p id="total-amount">Total: $60.00</p>
-                    <button class="btn btn-success">Finalizar Compra</button>
+                    <h3>Resumen de compra</h3>
+                    <div class="summary-item">
+                        <span>Producto</span>
+                        <span>$46.999</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Envío</span>
+                        <span class="text-success">Gratis</span>
+                    </div>
+                    <div class="summary-item">
+                        <a href="#" class="coupon-link">Ingresar código de cupón</a>
+                    </div>
+                    <hr>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span>$46.999</span>
+                    </div>
+                    <button class="btn btn-primary btn-block">Continuar compra</button>
                 </div>
             </section>
+            
             
             
         </section>
@@ -178,8 +168,58 @@
     </main>
     <!-- Pie Pagina -->
 
-    <footer>
-        <p>Este es el pie de página de mi página.</p>
+    <footer >
+        <div class="footer-column">
+            <h4>NUESTRA EMPRESA</h4>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Colección</a></li>
+                <li><a href="#">Locales</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Franquicias</a></li>
+                <li><a href="#">RRHH</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>LEGALES</h4>
+            <ul>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Políticas de Envío</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Defensa del Consumidor</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#" class="highlight-button">ARREPENTIMIENTO DE COMPRA</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>GIFT CARD</h4>
+            <ul>
+                <li><a href="#">Gift Card</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4 class="mb-3">SUSCRIBITE AL NEWSLETTER Y TE REGALAMOS UN 10% OFF EN TU PRÓXIMA COMPRA</h4>
+            <form class="row g-2">
+                <div class="col-12 col-md-8">
+                    <input type="email" class="form-control" placeholder="Ingresá tu e-mail" required>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button type="submit" class="btn btn-dark w-100">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer-column">
+            <h4>NUESTRAS REDES</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 

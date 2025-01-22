@@ -66,8 +66,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                                <li><a class="dropdown-item" href="#">Destacado Monroe</a></li>
-                                <li><a class="dropdown-item" href="#section-gift-card">Gif Card</a></li>
+                                <li><a class="dropdown-item" href="../index.html#section-categorias">Destacado Monroe</a></li>
+                                <li><a class="dropdown-item" href="../index.html#section-promociones">Promociones</a></li>
+                                <li><a class="dropdown-item" href="../index.html#section-gift-card">Gift Card</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
@@ -161,7 +162,7 @@
             <!-- Seccion Conttactos -->
             <br>
             <section class="section-formulario">
-                <div class="container">
+                <div class="container card p-4 ">
         
                     <form>
                         <div class="row g-3 mb-3">
@@ -207,8 +208,8 @@
     </main>
     <!-- Pie Pagina -->
 
-    <footer>
-        <div>
+    <footer >
+        <div class="footer-column">
             <h4>NUESTRA EMPRESA</h4>
             <ul>
                 <li><a href="#">Nosotros</a></li>
@@ -219,7 +220,7 @@
                 <li><a href="#">RRHH</a></li>
             </ul>
         </div>
-        <div>
+        <div class="footer-column">
             <h4>LEGALES</h4>
             <ul>
                 <li><a href="#">Políticas de Privacidad</a></li>
@@ -231,20 +232,24 @@
                 <li><a href="#" class="highlight-button">ARREPENTIMIENTO DE COMPRA</a></li>
             </ul>
         </div>
-        <div>
+        <div class="footer-column">
             <h4>GIFT CARD</h4>
             <ul>
                 <li><a href="#">Gift Card</a></li>
             </ul>
         </div>
-        <div>
-            <h4>SUSCRIBITE AL NEWSLETTER Y TE REGALAMOS UN 10% OFF EN TU PRÓXIMA COMPRA</h4>
-            <form>
-                <input type="email" placeholder="Ingresá tu e-mail" required>
-                <button type="submit">></button>
+        <div class="footer-column">
+            <h4 class="mb-3">SUSCRIBITE AL NEWSLETTER Y TE REGALAMOS UN 10% OFF EN TU PRÓXIMA COMPRA</h4>
+            <form class="row g-2">
+                <div class="col-12 col-md-8">
+                    <input type="email" class="form-control" placeholder="Ingresá tu e-mail" required>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button type="submit" class="btn btn-dark w-100">Enviar</button>
+                </div>
             </form>
         </div>
-        <div>
+        <div class="footer-column">
             <h4>NUESTRAS REDES</h4>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>

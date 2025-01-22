@@ -4,6 +4,7 @@ body {
     background-color: whitesmoke;
     margin: 0%;
     padding: 0%;
+
 }
 
 
@@ -33,51 +34,41 @@ ul {
     display: block;
     width: 70px;
     height: 30px;
-    /* Altura de la curva */
     border: 3px solid #e61835;
     border-color: transparent transparent #e61835 transparent;
     border-radius: 40%;
-    /* Hace que la curva sea redonda */
     margin: 0 auto 0;
-    /* Centra y separa del texto */
     position: relative;
     transform: translateY(-20px);
-    /* Ajusta la posición para que los "palitos" queden arriba */
 }
 
 .custom-container-title {
     padding: 50px 20px;
-    /* Espaciado */
     border-radius: 15px;
-    /* Bordes redondeados */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    /* Sombra suave */
     color: white;
-    /* Color del texto */
     margin: 30px auto;
-    /* Centrado en la página */
 }
 
 .bg-monore-grandient {
     background: linear-gradient(to right, #f8b195, #e61835);
-    /* Fondo degradado */
 
 }
 
 .custom-subtitle {
     font-size: 18px;
-    /* Tamaño del subtítulo */
     font-weight: 300;
-    /* Estilo ligero */
     line-height: 1.6;
-    /* Espaciado entre líneas */
 }
 
 .custom-container {
     margin: 10px;
 }
 
-
+.custom-card{
+    height: 600px;
+    
+}
 
 /* Estilos de la cabecera */
 
@@ -90,17 +81,74 @@ nav img {
 
 /* Estilos de footer */
 footer {
+    background-color: #fdfdfd;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
-    background-color: whitesmoke;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1 1 calc(20% - 20px);
+    min-width: 200px;
+}
+
+.footer-column h4 {
     color: black;
-    text-align: center;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
 
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover,
+.highlight-button {
+    color: #e61835;
+    font-weight: bold;
+}
+
+footer form {
+    display: flex;
+    gap: 10px;
+}
+
+footer input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 
 
+.social-icons a {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e61835;
+}
 
 
 
@@ -109,6 +157,8 @@ footer {
 main {
     text-align: center;
     color: black;
+    min-height: 70vh;
+
 }
 
 
@@ -140,71 +190,50 @@ main .img-cinco {
 
 /* Estilos seccion Categorias destacadas */
 
-.categorias-destacadas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2%;
-}
-
 .card-categoria {
-    height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-categoria:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-image-container {
-    position: relative;
+.card-categoria img {
     width: 100%;
-    overflow: hidden;
-}
-
-.card-img {
-
+    height:80%;
     object-fit: cover;
-    border-radius: 10px;
-    object-position: center;/
-}
-
-.card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-}
-
-.card-categoria:hover .card-overlay {
-    opacity: 1;
+    border-bottom: 5px solid #e63946; /* Línea roja bajo la imagen */
 }
 
 .card-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e63946; /* Rojo vibrante */
 }
 
-.card-description {
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
 
 
 /* Estilos seccion Gif */
-.card-gift-card {
+
+.card-gift{
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-gift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-gift img {
     width: 100%;
-    height: 400px;
+    height:70%;
+    object-fit: cover;
+    border-bottom: 5px solid #e63946; /* Línea roja bajo la imagen */
 }
 
 /* ------------------Estilos PRODUCTOS -----------------------*/
@@ -280,17 +309,20 @@ main .img-cinco {
 
 
 .card-product {
-    height: auto;
-    width: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 .card-product img {
-    height: 300px;
+    width: 100%;
+    height:60%;
     object-fit: cover;
-    object-position: center;
-    display: block;
+    border-bottom: 5px solid #e63946; /* Línea roja bajo la imagen */
 }
 
 .card-product-discount {
@@ -351,46 +383,36 @@ main .img-cinco {
 .body-cart {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-.cart-item {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border-radius: 8px;
-    padding: 1rem;
-    gap: 1rem;
-   
+    gap: 10px;
+
 }
 
+.cart-item {
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid #e74c3c;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 .cart-item img {
-    width: 100px;
-    height: 100px;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px;
     padding: 10px;
 }
 
-.cart-item-details {
-    margin-left: 10px;
-}
 
-.cart-item-details p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #333;
-}
 
-.cart-item-details p:first-child {
-    font-weight: bold;
+.cart-item-info {
+    text-align: center;
+    padding-top: 10px;
 }
-
-.cart-item-price {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #000;
-}
-
 
 .cart-item-controls {
     display: flex;
@@ -404,19 +426,16 @@ main .img-cinco {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 10px;
-}
+    justify-content: space-between;
+    /* Asegura el botón al final */
 
-/* Cart discount section */
-.cart-discount {
-    margin-bottom: 20px;
 }
-
 
 
 
 /* Cart summary */
 .cart-summary {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 
@@ -470,11 +489,10 @@ main .img-cinco {
 
     /* Estios Footer */
     footer {
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 10px;
-        margin-right: 20%;
-        margin-left: 20%;
+        flex-direction: row; 
+
+        
+
     }
 
 
@@ -518,6 +536,13 @@ main .img-cinco {
         grid-row: 1 / span 2;
         /* Ocupa ambas filas */
     }
+    /* Estilos seccion Promociones destacadas */
+    .promociones-destacas{
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+    }
 
     /* Estilos seccion Categorias destacadas */
 
@@ -532,27 +557,24 @@ main .img-cinco {
         height: 600px;
     }
 
-    .card-image-container {
-        position: relative;
-        overflow: hidden;
+    .card-categoria img {
+        width: 100%;
+        height:80%;
+        object-fit: cover;
+        border-bottom: 5px solid #e63946; /* Línea roja bajo la imagen */
     }
-
-    .card-image-container:hover .card-overlay {
-        opacity: 1;
-        /* Mostrar el overlay al pasar el cursor */
-    }
-
     .card-image {
         height: auto;
         object-fit: cover;
     }
 
-    .gif-card {
-        margin-bottom: 5%;
+    .gift-cards{
         display: grid;
+        margin-bottom: 5%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2%;
     }
+
 
     /* ----------------------------Estios Pantalla Productos------------------------ */
     .catalogo-productos {
@@ -560,10 +582,8 @@ main .img-cinco {
         grid-template-columns: 1fr 4fr;
     }
 
-    .card-product img {
-        height: auto;
-        width: auto;
-
+    .card-product {
+        height: 600px;
     }
 
     .table-productos {
@@ -586,10 +606,11 @@ main .img-cinco {
 
     .cart-item {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr 1fr;
         grid-gap: 10px;
         align-items: center;
         padding: 15px 10px;
+
     }
 
 
