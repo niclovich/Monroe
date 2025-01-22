@@ -122,7 +122,8 @@ main {
     gap: 10px;
 
 }
-.banner-principal  img {
+
+.banner-principal img {
     width: 100%;
     height: 70;
     object-fit: cover;
@@ -217,14 +218,16 @@ main .img-cinco {
     height: 100%;
     width: 100%;
     margin: auto;
-    
+
 }
+
 .filter-products h2 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 20px;
     text-align: center;
 }
+
 .accordion-button {
     background-color: #ffffff;
     color: #333;
@@ -232,20 +235,25 @@ main .img-cinco {
     border: none;
     padding: 0.75rem 1rem;
 }
+
 .accordion-button:focus {
     box-shadow: none;
 }
+
 .accordion-button:not(.collapsed) {
     color: #e74c3c;
     background-color: #f0f8ff;
 }
+
 .accordion-item {
     border: none;
     margin-bottom: 10px;
 }
+
 .accordion-body {
     padding: 10px 20px;
 }
+
 .accordion-body label {
     display: flex;
     align-items: center;
@@ -253,9 +261,11 @@ main .img-cinco {
     font-size: 0.9rem;
     color: #555;
 }
+
 .accordion-body input[type="checkbox"] {
     margin-right: 10px;
 }
+
 .color-circle {
     width: 16px;
     height: 16px;
@@ -324,22 +334,91 @@ main .img-cinco {
     border-radius: 10px;
 }
 
-.contact-icon {
-    font-size: 40px;
-    color: #0d6efd;
-    margin-bottom: 10px;
-}
 
+.icon {
+    font-size: 50px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
 
 .contact {
     background-color: #ffa2a6;
 }
 
+/*-------------------Estilos CARRITO----------------------- */
 /* Estilos del carrito */
-.fotter-cart {
-    background-color: #ffa2a6;
 
+.body-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+.cart-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 1rem;
+   
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.cart-item-details {
+    margin-left: 10px;
+}
+
+.cart-item-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.cart-item-details p:first-child {
+    font-weight: bold;
+}
+
+.cart-item-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Footer del Carrito */
+.footer-cart {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Cart discount section */
+.cart-discount {
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Cart summary */
+.cart-summary {
+    margin-top: 20px;
+}
+
 
 
 
@@ -397,6 +476,8 @@ main .img-cinco {
         margin-right: 20%;
         margin-left: 20%;
     }
+
+
 
 
     /* ----------------------------Estios Home------------------------ */
@@ -478,12 +559,13 @@ main .img-cinco {
         display: grid;
         grid-template-columns: 1fr 4fr;
     }
+
     .card-product img {
         height: auto;
         width: auto;
 
     }
-    
+
     .table-productos {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -491,5 +573,24 @@ main .img-cinco {
         margin-left: 20px;
 
     }
+
+    /* ----------------------------Estios Pantalla Carito------------------------ */
+    .section-cart {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+
+
+
+
+    .cart-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
 
 }

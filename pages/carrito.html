@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/icon-monroe.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
 
     <title>Monroe</title>
@@ -20,85 +22,158 @@
     <!-- Banner Principal  -->
 
     <header>
-        <nav>
-            <div class="custom-nav-prom">
-                <div id="carouselExampleSlidesOnly" class="carousel slide bg-monroe-red" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <span class="fw-bold text-white">3 CUOTAS SIN INTERÉS</span>
-                        </div>
-                        <div class="carousel-item">
-                            <span class="fw-bold text-white">6 CUOTAS SIN INTERÉS EN COMPRAS SUPERIORES A $150.000</span>
-    
-    
-                        </div>
-                        <div class="carousel-item">
-                            <span class="fw-bold text-white"> ⛟ ENVÍO GRATIS EN COMPRAS SUPERIORES A $150.000
-                            </span>
-    
-    
-                        </div>
+        <div class="custom-nav-prom">
+            <div id="carouselExampleSlidesOnly" class="carousel slide bg-monroe-red" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <span class="fw-bold text-white">3 CUOTAS SIN INTERÉS</span>
+                    </div>
+                    <div class="carousel-item">
+                        <span class="fw-bold text-white">6 CUOTAS SIN INTERÉS EN COMPRAS SUPERIORES A $150.000</span>
+
+
+                    </div>
+                    <div class="carousel-item">
+                        <span class="fw-bold text-white"> ⛟ ENVÍO GRATIS EN COMPRAS SUPERIORES A $150.000
+                        </span>
+
+
                     </div>
                 </div>
             </div>
-            <div class="custom-nav-top">
-                <div class="custom-col-1">
-                    <input type="search" id="search" placeholder="Search..." />
-                    <button class="btn"><i class="fas fa-search"></i></button>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo a la izquierda -->
+                <a class="navbar-brand" href="#"><img src="../img/icon-monroe.png" alt="icono Monroe" class="logo"></a>
+
+                <!-- Botón para móvil -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces principales centrados -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown-center">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                                <li><a class="dropdown-item" href="#">Destacado Monroe</a></li>
+                                <li><a class="dropdown-item" href="#section-gift-card">Gif Card</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acerca-de.html">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
                 </div>
-                <div class="custom-col-2">
-                    <img src="../img/icon-monroe.png" alt="icono Monroe" class="logo">
-                </div>
-                <div class="custom-col-3">
-                    <a href="pages/carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
-                    <a href="pages/user.html"><i class="fas fa-user"></i> User</a>
+
+                <!-- Usuario y carrito a la derecha -->
+                <div class="d-flex align-items-center">
+                    <a class="nav-link me-4" href="user.html"><i class="fas fa-user"></i> User</a>
+                    <a class="nav-link" href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
                 </div>
             </div>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="acerca-de.html">Acerca de </a>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
         </nav>
+
     </header>
     <!-- Contenido Principal -->
     <main>
+        <div class="custom-container-title bg-monore-grandient ">
+            <h2 class="custom-title">Mi pedido</h2>
+            <span class="custom-subtitle">Explora nuestra amplia selección de ropa para cada estilo y ocasión.</span>
+        </div>
+        <section class="section-cart ">
+            <section class="body-cart">
+                <article class="card cart-item">
+                    
+                    <img src="../img/enterizo-bahamas.webp" alt="Enterizo Bahamas">
+                    <div class=" cart-item-details">
+                        <p>Enterizo Bahamas</p>
+                        <p>Talla: S | Color: Negro</p>
+                    </div>
+                    <div class="cart-item-controls">
+                        <button class="btn btn-success">+</button>
+                        <input type="number" value="1" min="1" max="99">
+                        <button class="btn btn-warning" >-</button>
+                    </div>
+                    <p class="cart-item-price">$249.999</p>
+                    <span class="cart-item-delete">🗑️</span>
+                </article>
+                <article class="card cart-item">
+                    <img src="../img/remeron-bordado.webp" alt="Remeron Bordado">
+                    <div class="cart-item-details">
+                        <p>Remeron Bordado</p>
+                        <p>Talla: M | Color: Negro</p>
+                    </div>
+                    <div class="cart-item-controls">
+                        <button class="btn btn-success">+</button>
+                        <input type="number" value="1" min="1" max="99">
+                        <button class="btn btn-warning" >-</button>
+                    </div>
+                    <p class="cart-item-price">$249.999</p>
+                    <span class="cart-item-delete">🗑️</span>
+                </article>
+                <article class="card cart-item">
+                    <img src="../img/remeron-bordado.webp" alt="Remeron Bordado">
+                    <div class="cart-item-details">
+                        <p>Remeron Bordado</p>
+                        <p>Talla: S | Color: Negro</p>
+                    </div>
+                    <div class="cart-item-controls">
+                        <button class="btn btn-success">+</button>
+                        <input type="number" value="1" min="1" max="99">
+                        <button class="btn btn-warning" >-</button>
+                    </div>
+                    <p class="cart-item-price">$249.999</p>
+                    <span class="cart-item-delete">🗑️</span>
+                </article>
+                <article class="card cart-item">
+                    <img src="../img/remeron-bordado.webp" alt="Remeron Bordado">
+                    <div class="cart-item-details">
+                        <p>Remeron Bordado</p>
+                        <p>Talla: XL | Color: Negro</p>
+                    </div>
+                    <div class="cart-item-controls">
+                        <button class="btn btn-success">+</button>
+                        <input type="number" value="1" min="1" max="99">
+                        <button class="btn btn-warning" >-</button>
+                    </div>
+                    <p class="cart-item-price">$249.999</p>
+                    <span class="cart-item-delete">🗑️</span>
+                </article>
+            </section>
+            <!-- Pie Carrito  -->
+            <section class=" card footer-cart">
+                <div class="cart-discount">
+                    <h2>Aplicar Cupón de Descuento</h2>
+                    <label for="discount-code">Cupón:</label>
+                    <div class="input-group mb-3">
+                        <input 
+                            type="text" 
+                            id="discount-code" 
+                            class="form-control" 
+                            placeholder="Ingresa tu cupón aquí">
+                        <button 
+                            id="apply-discount" 
+                            class="btn btn-primary">Aplicar</button>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <p id="total-amount">Total: $60.00</p>
+                    <button class="btn btn-success">Finalizar Compra</button>
+                </div>
+            </section>
+            
+            
+        </section>
 
-        <h1>Carrito de Compras</h1>
-        <!-- Cuerpo Carrito Principal -->
-        <section >
-            <article>
-                <img src="../img/enterizo-bahamas.webp" alt="Producto enterizo-bahamas">
-                <p><strong>Producto 1</strong></p>
-                <p>Descripción del producto 1.</p>
-                <button>-</button>
-                <input type="number" value="1" min="1" max="99">
-                <button>+</button>
-                <p>$20.00</p>
-            </article>
-            <article>
-                <img src="../img/remeron-bordado.webp" alt="Producto remeron-bordado ">
-                <p><strong>Producto 2</strong></p>
-                <p>Descripción del producto 1.</p>
-                <button>-</button>
-                <input type="number" value="1" min="1" max="99">
-                <button>+</button>
-                <p>$20.00</p>
-            </article>
-        </section>
-        <!-- Pie Carrito  -->
-        <section class="fotter-cart">
-            <p>Total: $60.00</p>
-            <button>Finalizar Compra</button>
-        </section>
 
     </main>
     <!-- Pie Pagina -->
