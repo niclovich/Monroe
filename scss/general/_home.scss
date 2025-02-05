@@ -1,0 +1,47 @@
+@use '../utilidades/variables' as variables;
+@use '../utilidades/mixins' as mixins;
+
+//Home
+/* ---------------Home-------------- */
+
+
+.banner-principal{
+    @include mixins.grid-section(1, 10px,5%);
+    img {
+        @include mixins.image-cover(100%, 70);
+    }
+    .img-cuatro , .img-cinco,.img-uno{
+        display: none;
+    }
+}
+
+
+//Categorias destacadas
+/* Categorias destacadas*/
+
+.categorias-container {
+    @include mixins.grid-section(1, 10px,5%);
+    .card-categoria{
+        @include mixins.card-container();
+        img {
+            @include mixins.image-cover(100%, 80%);
+            border-bottom: 5px solid variables.$color-primary;
+        }
+    }
+    
+}
+
+// Card Gif
+
+.gift-cards-container{
+
+    @include mixins.grid-section(1, 10px,5%);
+    .card-gift{
+        @include mixins.card-container();
+        img {
+            @include mixins.image-cover(100%, 70%);
+        }
+    }
+}
+
+// Productos destacdos 

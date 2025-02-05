@@ -1,0 +1,76 @@
+@use '../utilidades/variables' as variables;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: variables.$color-secondary;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+ul {
+    list-style: none;
+
+}
+
+.bg-monroe-red {
+    background-color: variables.$color-primary;
+}
+
+.custom-title {
+    font-weight: bold;
+    color: variables.$color-dark;
+}
+
+.custom-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 30px;
+    border: 3px solid variables.$color-primary;
+    border-color: transparent transparent variables.$color-primary transparent;
+    border-radius: 40%;
+    margin: 0 auto 0;
+    position: relative;
+    transform: translateY(-20px);
+}
+
+.custom-container-title {
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: variables.$color-light;
+    margin: 30px auto;
+}
+
+.bg-monore-grandient {
+    background: variables.$gradient-bg;
+
+}
+
+.custom-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.custom-container {
+    margin: 10px;
+}
+
+.custom-card{
+    height: 700px;
+}

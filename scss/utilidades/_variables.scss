@@ -1,0 +1,37 @@
+//Colores
+$color-secondary: whitesmoke; // Naranja predominante
+$color-primary: #e61835; // Rojo predominante
+$color-trertiary: #f8b195; // Naranja claro
+$color-hover: #e63946; // Rojo vibrante en efectos hover
+$color-dark: #333; // Texto oscuro
+$color-light: #fdfdfd; // Fondo claro
+$color-bg-footer: #fdfdfd;
+$color-bg-contact: #ffa2a6;
+$color-transparente: rgba(255, 255, 255, 0.7);
+//Tipografía
+
+$font-family-base: "Poppins", sans-serif;
+$font-weight-bold: bold;
+$font-size-title: 18px;
+$font-size-subtitle: 1.3rem;
+$font-size-regular: 14px;
+$font-color-text: black;
+
+//Espacios y bordes
+
+$border-radius: 12px;
+$border-radius-small: 5px;
+$padding-section: 50px 20px;
+$box-shadow-default: 0 4px 8px rgba(0, 0, 0, 0.1);
+$box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+//Tamaños de imagens  contendores
+
+$card-height: 600px;
+$image-object-fit: cover;
+$banner-image-height: 70%; 
+
+
+//Gradientes  y trasnsaciones
+$gradient-bg: linear-gradient(to right,$color-trertiary,$color-primary);
+$transition-default: transform 0.3s ease, box-shadow 0.3s ease;

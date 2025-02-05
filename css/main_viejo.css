@@ -1,0 +1,610 @@
+/* Estilos Generales */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: whitesmoke;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+ul {
+    list-style: none;
+
+}
+
+.bg-monroe-red {
+    background-color: #e61835;
+}
+
+.custom-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.custom-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 30px;
+    border: 3px solid #e61835;
+    border-color: transparent transparent #e61835 transparent;
+    border-radius: 40%;
+    margin: 0 auto 0;
+    position: relative;
+    transform: translateY(-20px);
+}
+
+.custom-container-title {
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    margin: 30px auto;
+}
+
+.bg-monore-grandient {
+    background: linear-gradient(to right, #f8b195, #e61835);
+
+}
+
+.custom-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.custom-container {
+    margin: 10px;
+}
+
+div .custom-card {
+    height: 600px;
+
+}
+
+/* Estilos de la cabecera */
+
+nav img {
+    width: 100px;
+}
+
+
+
+
+/* Estilos de footer */
+footer {
+    background-color: #fdfdfd;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .footer-column {
+    flex: 1 1 calc(20% - 20px);
+    min-width: 200px;
+}
+
+footer .footer-column h4 {
+    color: black;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-column ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-column ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-column ul li a:hover,
+.highlight-button {
+    color: #e61835;
+    font-weight: bold;
+}
+
+footer form {
+    display: flex;
+    gap: 10px;
+}
+
+footer input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+
+footer .social-icons a {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #e61835;
+}
+
+
+
+/* Estios Main */
+
+body main {
+    text-align: center;
+    color: black;
+    min-height: 70vh;
+
+}
+
+.custom-card {
+    height: 600px;
+
+}
+
+/* ------------------Estilos HOME -----------------------*/
+
+/* Estilos seccion Banner */
+.banner-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.banner-principal img {
+    width: 100%;
+    height: 70;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-principal .img-cuatro,
+.banner-principal .img-cinco,
+.banner-principal .img-uno {
+    display: none;
+}
+
+
+/* Estilos seccion Categorias destacadas */
+
+.categorias-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+ .categorias-container  .card-categoria {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categorias-container  .card-categoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.categorias-destacadas .card-categoria img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-bottom: 5px solid #e63946;
+    /* Línea roja bajo la imagen */
+}
+
+
+
+
+
+/* Estilos seccion Gif */
+.gift-cards-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 10px;
+}
+.gift-cards-container .card-gift {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gift-cards-container .card-gift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gift-cards-container .card-gift img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-bottom: 5px solid #e63946;
+    /* Línea roja bajo la imagen */
+}
+
+/* ------------------Estilos PRODUCTOS -----------------------*/
+
+/* Estilo Filter*/
+.filter-products {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+
+}
+
+.filter-products h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.accordion-button {
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 1rem;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #e74c3c;
+    background-color: #f0f8ff;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+}
+
+.accordion-body {
+    padding: 10px 20px;
+}
+
+.accordion-body label {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.accordion-body input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.color-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+
+/* Estilos de la tabla de productos */
+
+
+.card-product {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-product img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-bottom: 5px solid #e63946;
+    /* Línea roja bajo la imagen */
+}
+
+.card-product-discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.card-product-details {
+    padding: 20px;
+}
+
+
+.card-product-price {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.price del {
+    color: #999;
+    font-size: 14px;
+}
+
+.card-product-pagos {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* ------------------Estilos CONTACTOS -----------------------*/
+.contact-card {
+    border: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.icon {
+    font-size: 50px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.contact {
+    background-color: #ffa2a6;
+}
+
+/*-------------------Estilos CARRITO----------------------- */
+/* Estilos del carrito */
+
+.body-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.cart-item {
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid #e74c3c;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+
+.cart-item img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+
+
+.cart-item-info {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Footer del Carrito */
+.footer-cart {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+
+
+/* Cart summary */
+.cart-summary {
+    margin-top: 50px;
+}
+
+
+
+
+
+/* Estilos de la barra de navegación  Destkop*/
+
+@media screen and (min-width: 1024px) {
+
+    /* Estilos de la barra de navegación */
+
+    header {
+
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header div .custom-nav-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* Estios Main*/
+    main {
+        margin-top: 130px;
+    }
+
+    /* Estios Footer */
+    footer {
+        flex-direction: row;
+    }
+
+
+
+
+    /* ----------------------------Estios Home------------------------ */
+
+    main  div .banner-principal .img-dos,
+    main  div  .banner-principal .img-cuatro,
+    main  div  .banner-principal .img-uno {
+        display: block;
+    }
+
+    main  div  .banner-principal {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    main  div .banner-principal .img-uno {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 2;
+    }
+
+    main  div  .img-dos {
+        grid-column: 2 / 3;
+        /* Segunda columna */
+        grid-row: 1 / 2;
+        /* Primera fila */
+    }
+
+    main  div  .img-tres {
+        grid-column: 2 / 3;
+        /* Segunda columna */
+        grid-row: 2 / 3;
+        /* Segunda fila */
+    }
+
+    main  div  .img-cuatro {
+        grid-column: 3 / 4;
+        /* Tercera columna */
+        grid-row: 1 / span 2;
+        /* Ocupa ambas filas */
+    }
+
+    /* Estilos seccion Promociones destacadas */
+    .promociones-destacas {
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+    }
+
+    /* Estilos seccion Categorias destacadas */
+
+    .categorias-container {
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+    }
+
+    .categorias-container .card-categoria {
+        height: 600px;
+    }
+
+    .categorias-container .card-categoria img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-bottom: 5px solid #e63946;
+        /* Línea roja bajo la imagen */
+    }
+
+
+
+    /* Estilos seccion Gif CARDS*/
+    .gift-cards-container{
+        display: grid;
+        margin-bottom: 5%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+    }
+
+
+    /* ----------------------------Estios Pantalla Productos------------------------ */
+    .catalogo-productos {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .card-product {
+        height: 600px;
+    }
+
+    .table-productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-left: 20px;
+
+    }
+
+    /* ----------------------------Estios Pantalla Carito------------------------ */
+    .section-cart {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+
+
+
+
+    .cart-item {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+        grid-gap: 10px;
+        align-items: center;
+        padding: 15px 10px;
+
+
+    }
+
+
+}

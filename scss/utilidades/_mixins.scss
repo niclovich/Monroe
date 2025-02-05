@@ -1,0 +1,30 @@
+@use '../utilidades/variables' as variables;
+@mixin grid-section($columns: 4, $gap: 2%, $margin-bottom: 5%) {
+    margin-bottom: $margin-bottom;
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+@mixin image-cover( $width,$height,) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin card-container() {
+    border-radius: variables.$border-radius;
+    box-shadow:variables.$box-shadow-default;
+    transition: variables.$transition-default;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: variables.$box-shadow-hover;
+    }
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

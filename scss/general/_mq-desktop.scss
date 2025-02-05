@@ -1,0 +1,146 @@
+@use '../utilidades/variables' as variables;
+@use '../utilidades/mixins' as mixins;
+
+//desktop
+/*Desktop*/
+
+@media screen and (min-width: 1024px) {
+
+    //Estilos de la cabecera
+    /* Estilos de la cabecera */
+    header {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: variables.$color-transparente;
+        z-index: 1000;
+        box-shadow: 0 2px 5px variables.$color-dark;
+
+        /* Ajustar el orden visual usando la propiedad `order` */
+        div {
+            .custom-nav-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+    }
+
+    /* Estilos del boody */
+    main {
+
+        margin-top: 130px;
+
+
+
+        /*Home*/
+        .banner-principal {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+
+            .img-uno,
+            .img-dos,
+            .img-cuatro {
+                display: block;
+            }
+
+            .img-uno {
+                grid-column: 1 / 2;
+                grid-row: 1 / span 2;
+            }
+
+            .img-dos {
+                grid-column: 2 / 3; // Segunda columna
+                grid-row: 1 / 2; // Primera fila
+            }
+
+            .img-tres {
+                grid-column: 2 / 3; // Segunda columna
+                grid-row: 2 / 3; // Segunda fila
+            }
+
+            .img-cuatro {
+                grid-column: 3 / 4; // Tercera columna
+                grid-row: 1 / span 2; // Ocupa ambas filas
+            }
+        }
+
+
+        .categorias-container {
+            @include mixins.grid-section(4, 10px, 5%);
+
+            .card-categoria {
+                height: 600px;
+
+                img {
+                    @include mixins.image-cover(100%, 80%);
+                }
+            }
+        }
+
+        .promociones-destacas {
+            @include mixins.grid-section(4, 10px, 5%);
+            height: 600px;
+
+            img {
+                @include mixins.image-cover(100%, 80%);
+            }
+
+        }
+
+        .gift-cards-container {
+            @include mixins.grid-section(4, 10px, 5%);
+
+        }
+        /*Estilso Productos */ 
+
+        .catalogo-productos {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            .table-productos {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+                margin-left: 20px;
+        
+            }
+      
+        }
+        .card-product {
+            height: 600px;
+        }
+
+
+        /*Estilos Carrito */
+
+        .section-cart {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+            .cart-item {
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr 1fr;
+                grid-gap: 10px;
+                align-items: center;
+                padding: 15px 10px;
+        
+        
+            }
+    
+        }
+    
+    
+    
+    
+
+    }
+   
+    /* Estilos Footer */
+    footer {
+        flex-direction: row;
+    }
+
+}

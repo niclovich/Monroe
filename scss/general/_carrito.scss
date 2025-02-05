@@ -1,0 +1,53 @@
+@use '../utilidades/variables' as variables;
+@use '../utilidades/mixins' as mixins;
+
+/*-------------------Estilos CARRITO----------------------- */
+main {
+    .body-cart {
+        @include mixins.flex-column;
+
+        .cart-item {
+            @include mixins.flex-column;
+
+            align-items: center;
+            border-bottom: 2px solid variables.$color-primary;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: variables.$box-shadow-default;
+
+            img {
+                display: block;
+                margin: auto;
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                padding: 10px;
+            }
+
+            .cart-item-info {
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            .cart-item-controls {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+        }
+    }
+
+    .footer-cart {
+        border-radius: 10px;
+        box-shadow: variables.$box-shadow-default;
+        text-align: center;
+        padding: 10px;
+        justify-content: space-between;
+        .cart-summary {
+            margin-top: 50px;
+        }
+        
+    }
+
+}

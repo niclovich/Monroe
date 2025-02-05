@@ -1,0 +1,10 @@
+@use '../utilidades/variables' as variables;
+@use '../utilidades/mixins' as mixins;
+/* Estilos de la cabecera */
+header {
+    //Agrewgar mas estilos en otro momento
+    nav img {
+        width: 100px;
+    }
+
+}

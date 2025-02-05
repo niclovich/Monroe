@@ -1,0 +1,77 @@
+//Variables
+@use '../utilidades/variables' as variables;
+//import de reset
+footer {
+    background-color: variables.$color-bg-footer;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; // Centrado de los elementos
+
+    gap: 20px;
+    
+    .footer-column {
+        flex: 1 1 calc(20% - 20px);
+        min-width: 200px;
+
+        h4 {
+            color: variables.$color-dark;
+            margin-bottom: 15px;
+            font-size: variables.$font-size-title;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    color: variables.$color-dark;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: variables.$color-primary;
+                        font-weight:  variables.$font-weight-bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .highlight-button {
+        color: variables.$color-primary;
+        font-weight: variables.$font-weight-bold;
+    }
+
+    form {
+        display: flex;
+        gap: 10px;
+    }
+
+    input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: variables.$font-size-regular;
+    }
+
+    .social-icons {
+        a {
+            color: variables.$color-dark;
+            font-size: 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: variables.$color-primary;
+            }
+        }
+    }
+}
