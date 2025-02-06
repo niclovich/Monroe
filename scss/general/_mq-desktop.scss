@@ -5,7 +5,9 @@
 /*Desktop*/
 
 @media screen and (min-width: 1024px) {
-
+    .custom-card{
+        max-height: 600px;
+    }
     //Estilos de la cabecera
     /* Estilos de la cabecera */
     header {
@@ -71,9 +73,8 @@
 
         .categorias-container {
             @include mixins.grid-section(4, 10px, 5%);
-
+   
             .card-categoria {
-                height: 600px;
 
                 img {
                     @include mixins.image-cover(100%, 80%);
@@ -83,8 +84,7 @@
 
         .promociones-destacas {
             @include mixins.grid-section(4, 10px, 5%);
-            height: 600px;
-
+    
             img {
                 @include mixins.image-cover(100%, 60%);
             }
@@ -92,8 +92,12 @@
         }
 
         .gift-cards-container {
-            @include mixins.grid-section(4, 10px, 5%);
-            
+            @include mixins.grid-section(4, 10px, 5%);   
+            .card-gift {
+                img {
+                    @include mixins.image-cover(100%, 70%);
+                }
+            }
 
         }
 
@@ -145,8 +149,8 @@
 
     /* Estilos Footer */
     footer {
+        display: flex;
         flex-direction: row;
-        
     }
 
 }

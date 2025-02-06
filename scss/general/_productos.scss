@@ -94,7 +94,7 @@ main {
         }
 
         img {
-            @include mixins.image-cover(100%, 60%);
+            @include mixins.image-cover(100%, 200px);
 
             border-bottom: 5px solid variables.$color-primary; // Línea roja bajo la imagen
         }

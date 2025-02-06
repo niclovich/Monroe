@@ -39,7 +39,7 @@
     .card-gift{
         @include mixins.card-container();
         img {
-            @include mixins.image-cover(100%, 70%);
+            @include mixins.image-cover(100%,70%);
         }
     }
 }

@@ -5,8 +5,13 @@
 /*Tablets*/
 
 @media screen and (min-width: 768px) {
+
     //Estilos de la cabecera
     /* Estilos de la cabecera */
+    .custom-card {
+        max-height: 600px;
+    }
+
     header {
         text-align: center;
         position: fixed;
@@ -72,8 +77,6 @@
             @include mixins.grid-section(2, 10px, 5%);
 
             .card-categoria {
-                height: 600px;
-
                 img {
                     @include mixins.image-cover(100%, 80%);
                 }
@@ -82,7 +85,6 @@
 
         .promociones-destacas {
             @include mixins.grid-section(2, 10px, 5%);
-            height: 600px;
 
             img {
                 @include mixins.image-cover(100%, 60%);
@@ -94,20 +96,35 @@
             @include mixins.grid-section(2, 10px, 5%);
 
         }
-        /*Estilso Productos */ 
+
+        /*Estilso Productos */
 
         .catalogo-productos {
             display: grid;
-            grid-template-columns: 1fr 4fr;
+            grid-template-columns: 1fr;
+
             .table-productos {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
                 margin-left: 20px;
-        
+
+                .card-product {
+                 
+                    img {
+                        @include mixins.image-cover(100%, 60%);
+
+                    }
+
+                   
+
+
+                }
+
             }
-      
+
         }
+
 
 
 
@@ -115,32 +132,31 @@
 
         .section-cart {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr;
             gap: 10px;
+
             .cart-item {
                 display: grid;
                 grid-template-columns: 1fr 3fr 1fr 1fr;
                 grid-gap: 10px;
                 align-items: center;
                 padding: 15px 10px;
-        
-        
+
+
             }
-    
+
         }
-    
-    
-    
-    
+
+
+
+
 
     }
-   
+
     /* Estilos Footer */
     footer {
+        display: flex;
         flex-direction: row;
-        gap: 10px;
-  
-        
     }
 
 }
