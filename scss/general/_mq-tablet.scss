@@ -2,10 +2,9 @@
 @use '../utilidades/mixins' as mixins;
 
 //desktop
-/*Desktop*/
+/*Tablets*/
 
-@media screen and (min-width: 1024px) {
-
+@media screen and (min-width: 768px) {
     //Estilos de la cabecera
     /* Estilos de la cabecera */
     header {
@@ -70,7 +69,7 @@
 
 
         .categorias-container {
-            @include mixins.grid-section(4, 10px, 5%);
+            @include mixins.grid-section(2, 10px, 5%);
 
             .card-categoria {
                 height: 600px;
@@ -82,7 +81,7 @@
         }
 
         .promociones-destacas {
-            @include mixins.grid-section(4, 10px, 5%);
+            @include mixins.grid-section(2, 10px, 5%);
             height: 600px;
 
             img {
@@ -92,30 +91,24 @@
         }
 
         .gift-cards-container {
-            @include mixins.grid-section(4, 10px, 5%);
-            
+            @include mixins.grid-section(2, 10px, 5%);
 
         }
-
-        /*Estilso Productos */
+        /*Estilso Productos */ 
 
         .catalogo-productos {
             display: grid;
             grid-template-columns: 1fr 4fr;
-
             .table-productos {
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
                 margin-left: 20px;
-
+        
             }
-
+      
         }
 
-        .card-product {
-            height: 600px;
-        }
 
 
         /*Estilos Carrito */
@@ -124,28 +117,29 @@
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 10px;
-
             .cart-item {
                 display: grid;
                 grid-template-columns: 1fr 3fr 1fr 1fr;
                 grid-gap: 10px;
                 align-items: center;
                 padding: 15px 10px;
-
-
+        
+        
             }
+    
         }
-
-
-
-
-
+    
+    
+    
+    
 
     }
-
+   
     /* Estilos Footer */
     footer {
         flex-direction: row;
+        gap: 10px;
+  
         
     }
 
