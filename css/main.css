@@ -68,6 +68,12 @@ ul {
   max-height: 500px;
 }
 
+.icon {
+  font-size: 50px;
+  color: #e61835;
+  margin-bottom: 20px;
+}
+
 /* Estilos de la cabecera */
 header nav img {
   width: 100px;
@@ -238,6 +244,13 @@ main .card-product-discount {
 }
 main .card-product-details {
   padding: 20px;
+}
+
+.section-contactanos .contact-card {
+  border: none;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 /*-------------------Estilos CARRITO----------------------- */

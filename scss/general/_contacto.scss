@@ -1,0 +1,15 @@
+@use '../utilidades/variables' as variables;
+@use '../utilidades/mixins' as mixins;
+
+.section-contactanos {
+
+    .contact-card {
+        border: none;
+        text-align: center;
+        box-shadow: variables.$box-shadow-default;
+        border-radius: 10px;
+
+
+    }
+
+}
