@@ -9,7 +9,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: variables.$color-secondary;
+    background-color: white;
     margin: 0%;
     padding: 0%;
 
@@ -31,8 +31,7 @@ ul {
 }
 
 .custom-title {
-    font-weight: bold;
-    color: variables.$color-dark;
+    color: rgb(119, 119, 119);
 }
 
 .custom-title::after {

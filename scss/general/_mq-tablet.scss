@@ -36,45 +36,16 @@
     /* Estilos del boody */
     main {
 
-        margin-top: 130px;
+
 
 
 
         /*Home*/
-        .banner-principal {
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-
-            .img-uno,
-            .img-dos,
-            .img-cuatro {
-                display: block;
-            }
-
-            .img-uno {
-                grid-column: 1 / 2;
-                grid-row: 1 / span 2;
-            }
-
-            .img-dos {
-                grid-column: 2 / 3; // Segunda columna
-                grid-row: 1 / 2; // Primera fila
-            }
-
-            .img-tres {
-                grid-column: 2 / 3; // Segunda columna
-                grid-row: 2 / 3; // Segunda fila
-            }
-
-            .img-cuatro {
-                grid-column: 3 / 4; // Tercera columna
-                grid-row: 1 / span 2; // Ocupa ambas filas
-            }
-        }
-
+     
 
         .categorias-container {
             @include mixins.grid-section(2, 10px, 5%);
+            padding: 20px 50px 0 50px;
 
             .card-categoria {
                 img {
