@@ -47,7 +47,7 @@ ul {
     transform: translateY(-20px);
 }
 
-.custom-container-title {
+.custom-container-info-title {
     padding: 50px 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -66,8 +66,8 @@ ul {
     line-height: 1.6;
 }
 
-.custom-container {
-    margin: 10px;
+.custom-container-info {
+    padding: 5% 0 0 0;
 }
 
 
@@ -79,4 +79,16 @@ ul {
     font-size: 50px;
     color: variables.$color-primary;
     margin-bottom: 20px;
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: variables.$color-primary;
+    color: variables.$color-light;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
 }

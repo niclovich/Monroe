@@ -8,6 +8,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    border-top: 1px solid variables.$color-primary;
 
     gap: 20px;
     

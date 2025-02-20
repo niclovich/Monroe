@@ -41,7 +41,7 @@ ul {
   transform: translateY(-20px);
 }
 
-.custom-container-title {
+.custom-container-info-title {
   padding: 50px 20px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -59,8 +59,8 @@ ul {
   line-height: 1.6;
 }
 
-.custom-container {
-  margin: 10px;
+.custom-container-info {
+  padding: 5% 0 0 0;
 }
 
 .custom-card {
@@ -71,6 +71,17 @@ ul {
   font-size: 50px;
   color: #e61835;
   margin-bottom: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e61835;
+  color: #fdfdfd;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
 }
 
 /* Estilos de la cabecera */
@@ -328,6 +339,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+  border-top: 1px solid #e61835;
   gap: 20px;
 }
 footer .footer-column {

@@ -42,7 +42,7 @@ ul {
     transform: translateY(-20px);
 }
 
-.custom-container-title {
+.custom-container-info-title {
     padding: 50px 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -61,7 +61,7 @@ ul {
     line-height: 1.6;
 }
 
-.custom-container {
+.custom-container-info {
     margin: 10px;
 }
 
