@@ -3,51 +3,141 @@
 
 /*-------------------Estilos CARRITO----------------------- */
 main {
-    .body-cart {
-        @include mixins.flex-column;
+
+.custom-container-info {
+    padding: 20px;
+    border-radius: 10px;
+
+
+    .section-cart {
+        padding: 40px;
+        .body-cart {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
         .cart-item {
-            @include mixins.flex-column;
-
-            align-items: center;
-            border-bottom: 2px solid variables.$color-primary;
-            padding: 10px;
-            margin-bottom: 10px;
-            box-shadow: variables.$box-shadow-default;
-
-            img {
-                display: block;
-                margin: auto;
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
-                padding: 10px;
+            gap: 15px;
+            padding: 15px;
+            border-bottom: 1px solid variables.$color-primary;
+            
+            &:last-child {
+                border-bottom: none;
             }
 
-            .cart-item-info {
-                text-align: center;
-                padding-top: 10px;
+            .cart-image {
+                width: 80px;
+                height: 80px;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+
+            .cart-item-details {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .product-name {
+                    font-size: variables.$font-size-regular;
+                    color: variables.$color-dark;
+                    margin-bottom: 5px;
+                }
+
+                .cart-actions {
+                    
+                    display: flex;
+                    gap: 10px;
+
+                }
             }
 
             .cart-item-controls {
                 display: flex;
-                align-items: center;
+                flex-direction: row;
+                justify-content: center;
                 gap: 5px;
+                margin: 10px 0;
+
+                .btn {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    font-size: 16px;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .quantity-input {
+                    width: 50px;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-size: variables.$font-size-small;
+                }
             }
 
+            .cart-item-info {
+                font-size: variables.$font-size-regular;
+                font-weight: bold;
+                color: variables.$color-primary;
+            }
         }
-    }
 
-    .footer-cart {
-        border-radius: 10px;
-        box-shadow: variables.$box-shadow-default;
-        text-align: center;
-        padding: 10px;
-        justify-content: space-between;
-        .cart-summary {
-            margin-top: 50px;
+        // Pie del carrito
+        .footer-cart {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+            .cart-summary {
+                h3 {
+                    font-size: variables.$font-size-title;
+                    color: variables.$color-dark;
+                    margin-bottom: 10px;
+                }
+
+                .summary-item {
+              
+                    padding: 5px 0;
+                    font-size: variables.$font-size-regular;
+
+                    .text-success {
+                        font-weight: bold;
+                    }
+                }
+
+                .coupon-link {
+                    display: inline-block;
+                    color: variables.$color-primary;
+                    text-decoration: none;
+                    font-size: variables.$font-size-regular;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        text-decoration: underline;
+                        transform: scaleX(1.1);
+                    }
+                }
+
+                .summary-total {
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: bold;
+                    font-size: variables.$font-size-title;
+                    margin-top: 10px;
+                }
+
+
+            }
         }
-        
     }
+}
 
 }

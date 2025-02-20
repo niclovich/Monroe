@@ -30,13 +30,17 @@ footer {
                 margin-bottom: 10px;
 
                 a {
+                    display: block;
+                    padding: 5px 10px; // Expande el área de clic
                     color: variables.$color-dark;
                     text-decoration: none;
-                    transition: color 0.3s ease;
-
+                    transition: all 0.3s ease;
+                    
                     &:hover {
                         color: variables.$color-primary;
-                        font-weight:  variables.$font-weight-bold;
+                        font-weight: variables.$font-weight-bold;
+                        background-color: rgba(variables.$color-primary, 0.1); // Opción para resaltar
+                        transform: scaleX(1.1); // Expande el ancho del enlace
                     }
                 }
             }

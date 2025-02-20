@@ -4,7 +4,9 @@
 /*Estilos productos*/
 
 main {
+    
     .catalogo-productos {
+        
         @include mixins.grid-section(1, 10px, 5%);
 
 

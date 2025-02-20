@@ -2,9 +2,62 @@
 @use '../utilidades/mixins' as mixins;
 /* Estilos de la cabecera */
 header {
-    //Agrewgar mas estilos en otro momento
+    // Agregar más estilos en otro momento
     nav img {
         width: 100px;
     }
 
+    // Estilo para la barra de navegación
+    .navbar-nav {
+        .nav-item {
+            position: relative;
+
+            .nav-link {
+                display: block;
+                padding: 10px 15px;
+                transition: all 0.3s ease;
+                color: variables.$color-dark;
+                text-decoration: none;
+
+                &:hover {
+                    color: variables.$color-primary;
+                    background-color: rgba(variables.$color-primary, 0.1);
+                    transform: scaleX(1.1); // Expande el enlace lateralmente
+                }
+            }
+
+            // Para los dropdowns en la navbar
+            .dropdown-menu {
+                background-color: variables.$color-bg-footer;
+                border-radius: 5px;
+                
+                .dropdown-item {
+                    transition: all 0.3s ease;
+                    color: variables.$color-dark;
+
+                    &:hover {
+                        color: variables.$color-primary;
+                        background-color: rgba(variables.$color-primary, 0.1);
+                        transform: scaleX(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    // Efecto para usuario y carrito
+    .d-flex {
+        a {
+            display: block;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+            color: variables.$color-dark;
+            text-decoration: none;
+            
+            &:hover {
+                color: variables.$color-primary;
+                transform: scaleX(1.1);
+            }
+        }
+    }
 }

@@ -61,9 +61,10 @@ ul {
 }
 
 .custom-subtitle {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.6;
+    font-size: variables.$font-size-regular;
+    color: variables.$color-dark;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .custom-container-info {
@@ -92,3 +93,46 @@ ul {
     margin-bottom: 10px;
     transition: all 0.3s ease;
 }
+
+
+.btn-outline-success {
+    width: 100%;
+    padding: 10px;
+    font-size: variables.$font-size-regular;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scaleX(1.1);
+        background-color: rgba(variables.$color-success, 0.2);
+    }
+}
+
+.btn-outline-danger {
+
+    margin: 10px;
+    padding: 5px 10px;
+
+    font-size: variables.$font-size-regular;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scaleX(1.1);
+        background-color: rgba(variables.$color-danger, 0.2);
+    }
+
+}
+
+
+
+.btn-outline-info {
+    margin: 10px;
+    padding: 5px 10px;
+
+    font-size: variables.$font-size-regular;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scaleX(1.1);
+        background-color: rgba(variables.$color-info, 0.2);
+    }
+}
+
