@@ -35,7 +35,7 @@
     /* Estilos del boody */
     main {
 
-
+        margin-top: 100px;
 
 
 
@@ -81,7 +81,7 @@
 
             .card-categoria {
                 border-radius: 50px;
-                height: 500px;
+                height: 400px;
 
                 img {
 
@@ -90,13 +90,16 @@
             }
         }
 
-        .promociones-destacas {
+        .promociones-destacas,.table-productos
+ {
             @include mixins.grid-section(4, 2%, 2%);
             padding: 20px 50px 0 50px;
 
-
-            img {
-                @include mixins.image-cover(100%, 60%);
+            .card-product {
+                height: 70vh;
+                img {
+                    @include mixins.image-cover(100%, 70%);
+                }
             }
 
         }
@@ -156,9 +159,9 @@
             }
         }
 
+        
 
-
-
+    
 
 
     }

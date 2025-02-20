@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="../css/main.css">
     <title>Monroe</title>
@@ -47,7 +47,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <!-- Logo a la izquierda -->
-                <a class="navbar-brand" href="#"><img src="../img/icon-monroe.png" alt="icono Monroe" class="logo animate__animated animate__rotateIn "></a>
+                <a class="navbar-brand" href="#"><img src="../img/icon-monroe.png" alt="icono Monroe"
+                        class="logo animate__animated animate__rotateIn "></a>
 
                 <!-- Botón para móvil -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -66,8 +67,10 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                                <li><a class="dropdown-item" href="../index.html#section-categorias">Destacado Monroe</a></li>
-                                <li><a class="dropdown-item" href="../index.html#section-promociones">Promociones</a></li>
+                                <li><a class="dropdown-item" href="../index.html#section-categorias">Destacado
+                                        Monroe</a></li>
+                                <li><a class="dropdown-item" href="../index.html#section-promociones">Promociones</a>
+                                </li>
                                 <li><a class="dropdown-item" href="../index.html#section-gift-card">Gift Card</a></li>
                             </ul>
                         </li>
@@ -79,7 +82,7 @@
 
                 <!-- Usuario y carrito a la derecha -->
                 <div class="d-flex align-items-center">
-                    <a class="nav-link me-4" href="user.html"><i class="fas fa-user"></i> User</a> 
+                    <a class="nav-link me-4" href="user.html"><i class="fas fa-user"></i> User</a>
                     <a class="nav-link" href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
                 </div>
             </div>
@@ -93,120 +96,171 @@
 
 
             <section class="section-products">
-                <div class="custom-container-title bg-monore-grandient ">
-                    <h2 class="custom-title">Productos</h2>
-                    <span class="custom-subtitle">Explora nuestra amplia selección de ropa para cada estilo y ocasión.</span>
+                <h2 class="custom-title h4 ">#PRODUCTOS </h2>
+                <span class="custom-subtitle">Explora nuestra amplia selección de ropa para cada estilo y
+                    ocasión.</span>
 
-                </div>
                 <div class="catalogo-productos">
                     <!-- Seccion Filter -->
                     <section class="filter-products">
                         <h2>Filtros</h2>
-                    
+
                         <div class="accordion" id="filterAccordion">
                             <!-- Tipo de Producto -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingProducto">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProducto" aria-expanded="true" aria-controls="collapseProducto">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseProducto" aria-expanded="true"
+                                        aria-controls="collapseProducto">
                                         Tipo de Producto
                                     </button>
                                 </h2>
-                                <div id="collapseProducto" class="accordion-collapse collapse show" aria-labelledby="headingProducto" data-bs-parent="#filterAccordion">
+                                <div id="collapseProducto" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingProducto" data-bs-parent="#filterAccordion">
                                     <div class="accordion-body">
-                                        <label for="camisas"><input type="checkbox" id="camisas" name="producto[]" value="camisas"> Camisas</label>
-                                        <label for="tops"><input type="checkbox" id="tops" name="producto[]" value="tops"> Tops</label>
-                                        <label for="vestidos"><input type="checkbox" id="vestidos" name="producto[]" value="vestidos"> Vestidos</label>
-                                        <label for="carteras"><input type="checkbox" id="carteras" name="producto[]" value="carteras"> Carteras</label>
-                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                        <label for="camisas"><input type="checkbox" id="camisas" name="producto[]"
+                                                value="camisas"> Camisas</label>
+                                        <label for="tops"><input type="checkbox" id="tops" name="producto[]"
+                                                value="tops"> Tops</label>
+                                        <label for="vestidos"><input type="checkbox" id="vestidos" name="producto[]"
+                                                value="vestidos"> Vestidos</label>
+                                        <label for="carteras"><input type="checkbox" id="carteras" name="producto[]"
+                                                value="carteras"> Carteras</label>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+
+                                            Ver Más</a>
                                     </div>
                                 </div>
                             </div>
-                    
+
                             <!-- Talla -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingTalla">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTalla" aria-expanded="false" aria-controls="collapseTalla">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTalla" aria-expanded="false"
+                                        aria-controls="collapseTalla">
                                         Talla
                                     </button>
                                 </h2>
-                                <div id="collapseTalla" class="accordion-collapse collapse" aria-labelledby="headingTalla" data-bs-parent="#filterAccordion">
+                                <div id="collapseTalla" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTalla" data-bs-parent="#filterAccordion">
                                     <div class="accordion-body">
-                                        <label for="unitalla"><input type="checkbox" id="unitalla" name="talla[]" value="unitalla"> Unitalla</label>
-                                        <label for="xs"><input type="checkbox" id="xs" name="talla[]" value="xs"> XS</label>
+                                        <label for="unitalla"><input type="checkbox" id="unitalla" name="talla[]"
+                                                value="unitalla"> Unitalla</label>
+                                        <label for="xs"><input type="checkbox" id="xs" name="talla[]" value="xs">
+                                            XS</label>
                                         <label for="s"><input type="checkbox" id="s" name="talla[]" value="s"> S</label>
                                         <label for="m"><input type="checkbox" id="m" name="talla[]" value="m"> M</label>
                                         <label for="l"><input type="checkbox" id="l" name="talla[]" value="l"> L</label>
-                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+
+                                            Ver Más</a>
                                     </div>
                                 </div>
                             </div>
-                    
+
                             <!-- Color -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingColor">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseColor" aria-expanded="false"
+                                        aria-controls="collapseColor">
                                         Color
                                     </button>
                                 </h2>
-                                <div id="collapseColor" class="accordion-collapse collapse" aria-labelledby="headingColor" data-bs-parent="#filterAccordion">
+                                <div id="collapseColor" class="accordion-collapse collapse"
+                                    aria-labelledby="headingColor" data-bs-parent="#filterAccordion">
                                     <div class="accordion-body">
-                                        <label for="multicolor"><input type="checkbox" id="multicolor" name="color[]" value="multicolor"> <span class="color-circle" style="background-color: multicolor;"></span> Multicolor</label>
-                                        <label for="azul"><input type="checkbox" id="azul" name="color[]" value="azul"> <span class="color-circle" style="background-color: blue;"></span> Azul</label>
-                                        <label for="rosa"><input type="checkbox" id="rosa" name="color[]" value="rosa"> <span class="color-circle" style="background-color: pink;"></span> Rosa</label>
-                                        <label for="verde"><input type="checkbox" id="verde" name="color[]" value="verde"> <span class="color-circle" style="background-color: green;"></span> Verde</label>
-                                        <label for="rojo"><input type="checkbox" id="rojo" name="color[]" value="rojo"> <span class="color-circle" style="background-color: red;"></span> Rojo</label>
-                                        <label for="morado"><input type="checkbox" id="morado" name="color[]" value="morado"> <span class="color-circle" style="background-color: purple;"></span> Morado</label>
-                                        <label for="naranja"><input type="checkbox" id="naranja" name="color[]" value="naranja"> <span class="color-circle" style="background-color: orange;"></span> Naranja</label>
-                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                        <label for="multicolor"><input type="checkbox" id="multicolor" name="color[]"
+                                                value="multicolor"> <span class="color-circle"
+                                                style="background-color: multicolor;"></span> Multicolor</label>
+                                        <label for="azul"><input type="checkbox" id="azul" name="color[]" value="azul">
+                                            <span class="color-circle" style="background-color: blue;"></span>
+                                            Azul</label>
+                                        <label for="rosa"><input type="checkbox" id="rosa" name="color[]" value="rosa">
+                                            <span class="color-circle" style="background-color: pink;"></span>
+                                            Rosa</label>
+                                        <label for="verde"><input type="checkbox" id="verde" name="color[]"
+                                                value="verde"> <span class="color-circle"
+                                                style="background-color: green;"></span> Verde</label>
+                                        <label for="rojo"><input type="checkbox" id="rojo" name="color[]" value="rojo">
+                                            <span class="color-circle" style="background-color: red;"></span>
+                                            Rojo</label>
+                                        <label for="morado"><input type="checkbox" id="morado" name="color[]"
+                                                value="morado"> <span class="color-circle"
+                                                style="background-color: purple;"></span> Morado</label>
+                                        <label for="naranja"><input type="checkbox" id="naranja" name="color[]"
+                                                value="naranja"> <span class="color-circle"
+                                                style="background-color: orange;"></span> Naranja</label>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+
+                                            Ver Más</a>
                                     </div>
                                 </div>
                             </div>
-                    
+
                             <!-- Material -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingMaterial">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaterial" aria-expanded="false" aria-controls="collapseMaterial">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMaterial" aria-expanded="false"
+                                        aria-controls="collapseMaterial">
                                         Material
                                     </button>
                                 </h2>
-                                <div id="collapseMaterial" class="accordion-collapse collapse" aria-labelledby="headingMaterial" data-bs-parent="#filterAccordion">
+                                <div id="collapseMaterial" class="accordion-collapse collapse"
+                                    aria-labelledby="headingMaterial" data-bs-parent="#filterAccordion">
                                     <div class="accordion-body">
-                                        <label for="poliester"><input type="checkbox" id="poliester" name="material[]" value="poliester"> Poliéster</label>
-                                        <label for="algodon"><input type="checkbox" id="algodon" name="material[]" value="algodon"> Algodón</label>
-                                        <label for="polipiel"><input type="checkbox" id="polipiel" name="material[]" value="polipiel"> Polipiel</label>
-                                        <label for="pana"><input type="checkbox" id="pana" name="material[]" value="pana"> Pana</label>
-                                        <label for="acrilico"><input type="checkbox" id="acrilico" name="material[]" value="acrilico"> Acrílico</label>
-                                        <label for="saten"><input type="checkbox" id="saten" name="material[]" value="saten"> Satén</label>
-                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                        <label for="poliester"><input type="checkbox" id="poliester" name="material[]"
+                                                value="poliester"> Poliéster</label>
+                                        <label for="algodon"><input type="checkbox" id="algodon" name="material[]"
+                                                value="algodon"> Algodón</label>
+                                        <label for="polipiel"><input type="checkbox" id="polipiel" name="material[]"
+                                                value="polipiel"> Polipiel</label>
+                                        <label for="pana"><input type="checkbox" id="pana" name="material[]"
+                                                value="pana"> Pana</label>
+                                        <label for="acrilico"><input type="checkbox" id="acrilico" name="material[]"
+                                                value="acrilico"> Acrílico</label>
+                                        <label for="saten"><input type="checkbox" id="saten" name="material[]"
+                                                value="saten"> Satén</label>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+
+                                            Ver Más</a>
                                     </div>
                                 </div>
                             </div>
-                    
+
                             <!-- Detalles -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingDetalles">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDetalles" aria-expanded="false" aria-controls="collapseDetalles">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseDetalles" aria-expanded="false"
+                                        aria-controls="collapseDetalles">
                                         Detalles
                                     </button>
                                 </h2>
-                                <div id="collapseDetalles" class="accordion-collapse collapse" aria-labelledby="headingDetalles" data-bs-parent="#filterAccordion">
+                                <div id="collapseDetalles" class="accordion-collapse collapse"
+                                    aria-labelledby="headingDetalles" data-bs-parent="#filterAccordion">
                                     <div class="accordion-body">
-                                        <label for="dobladillo"><input type="checkbox" id="dobladillo" name="detalle[]" value="dobladillo"> Dobladillo sin costuras</label>
-                                        <label for="bolsillo"><input type="checkbox" id="bolsillo" name="detalle[]" value="bolsillo"> Bolsillo</label>
-                                        <label for="bordado"><input type="checkbox" id="bordado" name="detalle[]" value="bordado"> Bordado</label>
-                                        <label for="cordon"><input type="checkbox" id="cordon" name="detalle[]" value="cordon"> Cordón</label>
-                                        <label for="flecos"><input type="checkbox" id="flecos" name="detalle[]" value="flecos"> Flecos</label>
-                                        <label for="abertura"><input type="checkbox" id="abertura" name="detalle[]" value="abertura"> Abertura</label>
-                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+ Ver Más</a>
+                                        <label for="dobladillo"><input type="checkbox" id="dobladillo" name="detalle[]"
+                                                value="dobladillo"> Dobladillo sin costuras</label>
+                                        <label for="bolsillo"><input type="checkbox" id="bolsillo" name="detalle[]"
+                                                value="bolsillo"> Bolsillo</label>
+                                        <label for="bordado"><input type="checkbox" id="bordado" name="detalle[]"
+                                                value="bordado"> Bordado</label>
+                                        <label for="cordon"><input type="checkbox" id="cordon" name="detalle[]"
+                                                value="cordon"> Cordón</label>
+                                        <label for="flecos"><input type="checkbox" id="flecos" name="detalle[]"
+                                                value="flecos"> Flecos</label>
+                                        <label for="abertura"><input type="checkbox" id="abertura" name="detalle[]"
+                                                value="abertura"> Abertura</label>
+                                        <a href="#" style="font-size: 0.9rem; color: #007bff; text-decoration: none;">+
+                                            Ver Más</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    
+
                     <!-- Seccion Productos -->
                     <section class="table-productos">
-                        <article class=" card  custom-card card-product">
+                        <article class=" card    card-product">
                             <div class="card-product-discount">30% OFF</div>
                             <img src="../img/enterizo-bahamas.webp" alt="Producto enterizo-bahamas">
                             <div class="card-product-details">
@@ -218,12 +272,12 @@
                                 <p class="card-product-pagos">3 cuotas de 26.833,00</p>
                                 <div class="card-product-buttons">
                                     <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                    <a href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
                                 </div>
                             </div>
                         </article>
 
-                        <article class="card custom-card card-product">
+                        <article class="card   card-product">
                             <div class="card-product-discount">30% OFF</div>
                             <img src="../img/mini-falda-vespera.webp" alt="Producto remeron-bordado-smooth">
                             <div class="card-product-details">
@@ -235,12 +289,12 @@
                                 <p class="card-product-pagos">3 cuotas de 26.833,00</p>
                                 <div class="card-product-buttons">
                                     <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                    <a href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
                                 </div>
                             </div>
                         </article>
 
-                        <article class="card custom-card card-product">
+                        <article class="card   card-product">
                             <div class="card-product-discount">30% OFF</div>
                             <img src="../img/vestido-largo-tatarian.webp" alt="Producto vestido-largo-tatarian">
                             <div class="card-product-details">
@@ -252,27 +306,11 @@
                                 <p class="card-product-pagos">3 cuotas de 26.833,00</p>
                                 <div class="card-product-buttons">
                                     <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                    <a href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
                                 </div>
                             </div>
                         </article>
-                        <article class="card custom-card  card-product">
-                            <div class="card-product-discount">30% OFF</div>
-                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
-                            <div class="card-product-details">
-                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
-                                    <span>50</span>
-                                </p>
-                                <h3 class="card-title" >Pantallon Amaral</h3>
-                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
-                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
-                                <div class="card-product-buttons">
-                                    <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="card custom-card  card-product">
+                        <article class="card    card-product">
                             <div class="card-product-discount">30% OFF</div>
                             <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
                             <div class="card-product-details">
@@ -284,43 +322,11 @@
                                 <p class="card-product-pagos">3 cuotas de 26.833,00</p>
                                 <div class="card-product-buttons">
                                     <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                    <a href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
                                 </div>
                             </div>
                         </article>
-                        <article class="card custom-card  card-product">
-                            <div class="card-product-discount">30% OFF</div>
-                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
-                            <div class="card-product-details">
-                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
-                                    <span>50</span>
-                                </p>
-                                <h3 class="card-title" >Pantallon Amaral</h3>
-                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
-                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
-                                <div class="card-product-buttons">
-                                    <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="card custom-card  card-product">
-                            <div class="card-product-discount">30% OFF</div>
-                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
-                            <div class="card-product-details">
-                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
-                                    <span>50</span>
-                                </p>
-                                <h3 class="card-title" >Pantallon Amaral</h3>
-                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
-                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
-                                <div class="card-product-buttons">
-                                    <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="card  custom-card  card-product">
+                        <article class="card    card-product">
                             <div class="card-product-discount">30% OFF</div>
                             <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
                             <div class="card-product-details">
@@ -332,27 +338,59 @@
                                 <p class="card-product-pagos">3 cuotas de 26.833,00</p>
                                 <div class="card-product-buttons">
                                     <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                    <a href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
                                 </div>
                             </div>
                         </article>
-                        <article class=" card  custom-card  card-product">
+                        <article class="card    card-product">
                             <div class="card-product-discount">30% OFF</div>
-                            <img src="../img/enterizo-bahamas.webp" alt="Producto enterizo-bahamas">
+                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
                             <div class="card-product-details">
                                 <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
                                     <span>50</span>
                                 </p>
-                                <h3 class="card-title" >Enterizo Bahmas</h3>
+                                <h3 class="card-title">Pantallon Amaral</h3>
                                 <p class="card-product-price"><del>$114.999</del> $80.499</p>
                                 <p class="card-product-pagos">3 cuotas de 26.833,00</p>
                                 <div class="card-product-buttons">
                                     <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                    <a href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
                                 </div>
                             </div>
                         </article>
-                        <article class=" card custom-card  card-product">
+                        <article class="card    card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3 class="card-title">Pantallon Amaral</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                                <div class="card-product-buttons">
+                                    <a class="btn btn-outline-danger">Ver Más</a>
+                                    <a href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card     card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/pantalon-amaral.webp" alt="Producto pantalon-amaral">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3 class="card-title">Pantallon Amaral</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                                <div class="card-product-buttons">
+                                    <a class="btn btn-outline-danger">Ver Más</a>
+                                    <a href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class=" card     card-product">
                             <div class="card-product-discount">30% OFF</div>
                             <img src="../img/enterizo-bahamas.webp" alt="Producto enterizo-bahamas">
                             <div class="card-product-details">
@@ -364,7 +402,24 @@
                                 <p class="card-product-pagos">3 cuotas de 26.833,00</p>
                                 <div class="card-product-buttons">
                                     <a class="btn btn-outline-danger">Ver Más</a>
-                                    <a  href="../pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                    <a href="/pages/carrito.html" class="btn btn-outline-danger">Agregar al Carrito</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class=" card    card-product">
+                            <div class="card-product-discount">30% OFF</div>
+                            <img src="../img/enterizo-bahamas.webp" alt="Producto enterizo-bahamas">
+                            <div class="card-product-details">
+                                <p>TALLE: <span>40</span> <span>42</span> <span>44</span> <span>46</span>
+                                    <span>50</span>
+                                </p>
+                                <h3 class="card-title">Enterizo Bahmas</h3>
+                                <p class="card-product-price"><del>$114.999</del> $80.499</p>
+                                <p class="card-product-pagos">3 cuotas de 26.833,00</p>
+                                <div class="card-product-buttons">
+                                    <a class="btn btn-outline-danger">Ver Más</a>
+                                    <a href="../pages/carrito.html" class="btn btn-outline-danger">Agregar al
+                                        Carrito</a>
                                 </div>
                             </div>
                         </article>
@@ -379,7 +434,7 @@
 
 
     </main>
-    <footer >
+    <footer>
         <div class="footer-column">
             <h4>NUESTRA EMPRESA</h4>
             <ul>

@@ -56,9 +56,13 @@
 
         .promociones-destacas {
             @include mixins.grid-section(2, 10px, 5%);
+            padding: 20px 50px 0 50px;
 
-            img {
-                @include mixins.image-cover(100%, 60%);
+            .card-product {
+                height: 70vh;
+                img {
+                    @include mixins.image-cover(100%, 60%);
+                }
             }
 
         }
@@ -68,6 +72,7 @@
 
         }
 
+
         /*Estilso Productos */
 
         .catalogo-productos {
@@ -75,15 +80,14 @@
             grid-template-columns: 1fr;
 
             .table-productos {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-                margin-left: 20px;
+                @include mixins.grid-section(2, 10px, 5%);
+                padding: 20px 50px 0 50px;
+
 
                 .card-product {
                  
                     img {
-                        @include mixins.image-cover(100%, 60%);
+                        @include mixins.image-cover(100%, 70%);
 
                     }
 
