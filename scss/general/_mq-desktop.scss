@@ -75,28 +75,29 @@
 
 
         .categorias-container {
-            @include mixins.grid-section(4, 2%, 2%);
+            @include mixins.grid-section(4, 1%, 2%);
             padding: 20px 50px 0 50px;
 
 
             .card-categoria {
                 border-radius: 50px;
-                height: 400px;
+                height: 350px;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+                position: relative;
+                overflow: hidden;
 
-                img {
 
-                    @include mixins.image-cover(100%, 80%);
-                }
             }
         }
 
-        .promociones-destacas,.table-productos
- {
+        .promociones-destacas,
+        .table-productos {
             @include mixins.grid-section(4, 2%, 2%);
             padding: 20px 50px 0 50px;
 
             .card-product {
                 height: 70vh;
+
                 img {
                     @include mixins.image-cover(100%, 70%);
                 }
@@ -123,7 +124,7 @@
             display: grid;
             grid-template-columns: 1fr 4fr;
 
-            
+
 
             .table-productos {
                 display: grid;
@@ -136,7 +137,7 @@
         }
 
         .card-product {
-            
+
             height: 600px;
         }
 
@@ -159,9 +160,9 @@
             }
         }
 
-        
 
-    
+
+
 
 
     }

@@ -45,15 +45,62 @@
 /* Categorias destacadas*/
 
 .categorias-container {
-    @include mixins.grid-section(1, 10px, 5%);
+    @include mixins.grid-section(2, 10px, 5%);
     padding: 20px 10px 0 10px;
 
+   
     .card-categoria {
-        @include mixins.card-container();
+        border-radius: 50px;
+        height: 150px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        position: relative;
+        overflow: hidden;
+
+
 
         img {
             @include mixins.image-cover(100%, 80%);
-            border-bottom: 5px solid variables.$color-primary;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:variables.$color-transparente; // Fondo oscuro semitransparente
+            color:variables.$color-primary; // Texto blanco para contraste
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            transition: opacity 0.3s ease;
+            width: 80%;
+            text-transform: uppercase;
+        }
+
+        &:hover .overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+        }
+
+        .overlay h3 {
+            color:variables.$color-subtitle;
+            margin-bottom: 5px;
+        }
+
+        .overlay span {
+            color: variables.$color-primary; // Texto "Ver más" en blanco
+            font-size: 14px;
         }
     }
 

@@ -31,7 +31,7 @@ ul {
 }
 
 .custom-title {
-    color: rgb(119, 119, 119);
+    color: variables.$color-subtitle;
 }
 
 .custom-title::after {
@@ -94,6 +94,8 @@ ul {
     transition: all 0.3s ease;
 }
 
+//Botones
+/* Botones */
 
 .btn-outline-success {
     width: 100%;
