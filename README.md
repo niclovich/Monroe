@@ -1,8 +1,11 @@
 # Monroe - Sistema de Ventas de Productos
 Monroe es un sistema web diseñado para gestionar de manera eficiente la venta de productos, desde el registro de ventas hasta el control de inventarios. Su objetivo es automatizar el proceso de ventas, mejorar el control de stock y facilitar la administración de productos en tiempo real.
 ## Enlaces
-  **Deploy** https://niclovich.github.io/Monroe/
-  **Repositorio** https://github.com/niclovich/monroe.git
+-   **Deploy** https://niclovich.github.io/Monroe/
+-  **Deploy en Servidor** https://monroe-hazel.vercel.app/
+-   **Repositorio** https://github.com/niclovich/monroe.git
+
+  
 ## Objetivos
 El sistema Monroe tiene como objetivo:
 - **Gestión de ventas**: Facilitar la realización de ventas de productos a través de una interfaz sencilla y eficiente.
