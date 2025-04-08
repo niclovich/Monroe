@@ -438,11 +438,17 @@ main .custom-container-info .section-cart .cart-item .cart-item-details .cart-ac
   gap: 10px;
 }
 main .custom-container-info .section-cart .cart-item .cart-item-controls {
+
+
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  gap: 5px;
-  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 6px 12px;
+  gap: 16px;
+  font-family: sans-serif;
+  background-color: white;
 }
 main .custom-container-info .section-cart .cart-item .cart-item-controls .btn {
   width: 30px;
